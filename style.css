@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 8vh;
+    height: 10vh;
+    position: relative;
+    padding: 0 20px;
+    margin-top: 20px;
+}
+
+nav img {
+    height: 16vh;
+    width: auto;
+    position: absolute;
+    left: 15vw;
+    bottom: 0;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-right: 20px;
+    gap: 3.7vw;
+    position: absolute;
+    right: 10vw;
+    font-size: larger;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav ul li a:active {
+    color: inherit;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    height: 40vh;
+    /* background-color: #f1f1f1; */
+    gap: 10vw;
+    position: relative;
+}
+.container-2{
+    position: absolute;
+    top: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6vw;
+}
+.large-text {
+    margin-top: 10vh;
+    margin-right: 10px;
+    margin-left: 15vw;
+    font-size: 3rem;
+    font-weight: bold;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+.large-text span {
+    display: block;
+    white-space: normal; 
+}
+
+.small-text {
+    margin-top: 10vh; 
+    margin-right: 10vw;
+    font-size: 1.2rem;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    display: block;
+    white-space: normal;
+}
+#btn-blue{
+    margin-top: 3vh;
+    background-color: #5226d7d8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+/* text done */
+
+.cardContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    margin-top: 10vh;
+    height: 100%;
+}
+.cardImage{
+    
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+.text-Heading{
+    
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    nav {
+        padding: 0 10px; 
+    }
+
+    nav img {
+        left: 5vw; 
+    }
+
+    nav ul {
+        position: static; 
+        display: none; 
+    }
+
+    nav ul.active {
+        display: flex; 
+        flex-direction: column;
+        background-color: #f1f1f1;
+        position: absolute; 
+        top: 10vh;
+        right: 0; 
+        width: 100%; 
+        padding: 20px;
+    }
+
+    nav ul li {
+        margin-bottom: 10px; 
+    }
+
+    .large-text {
+        margin-left: 5vw;
+        font-size: 2rem;
+    }
+    
+    .small-text {
+        margin-right: 5vw;
+        font-size: 1rem;
+    }
+    
+    .container-2 {
+        gap: 2vw;
+    }
+    
+    .cardContainer {
+        flex-direction: column;
+    }
+}
